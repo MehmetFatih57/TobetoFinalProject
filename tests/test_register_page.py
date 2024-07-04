@@ -28,7 +28,7 @@ class TestRegisterPage(BaseTest):
         register_page.click_membership_contrat()
         register_page.click_email_confirmation()
         register_page.click_phone_confirmation()
-        register_page.click_phone_number_button("5308522975")
+        register_page.click_phone_number_button("5452375039")
         time.sleep(5)  # reCaptcha doğrulamasını manuel olarak atlamak için
         register_page.click_continue_button()
 
@@ -48,7 +48,7 @@ class TestRegisterPage(BaseTest):
         register_page.click_membership_contrat()
         register_page.click_email_confirmation()
         register_page.click_phone_confirmation()
-        register_page.click_phone_number_button("530852297")  # 9 karakter girilir
+        register_page.click_phone_number_button("5452375039")  # 9 karakter girilir
         time.sleep(5)  # reCaptcha doğrulamasını manuel olarak atlamak için
         register_page.click_continue_button()
         assert register_page.get_phone_number_character_warning() == RegisterPageConstants.WARNING_AT_LEAST_10_CHARACTER
@@ -72,7 +72,7 @@ class TestRegisterPage(BaseTest):
         register_page.click_sign_up()
         register_page.enter_name("Deneme")
         register_page.enter_last_name("Test3A")
-        register_page.enter_mail("caliskanahmethakan@gmail.com")
+        register_page.enter_mail("mehmet.fatihh57@gmail.com")
         register_page.enter_password("Gs12345")
         register_page.enter_password_again("Gs12345")
         register_page.click_sign_up_button()
@@ -81,7 +81,7 @@ class TestRegisterPage(BaseTest):
         register_page.click_membership_contrat()
         register_page.click_email_confirmation()
         register_page.click_phone_confirmation()
-        register_page.click_phone_number_button("5308522975")
+        register_page.click_phone_number_button("5452375039")
         time.sleep(5)  # reCaptcha doğrulamasını manuel olarak atlamak için
         register_page.click_continue_button()
         assert register_page.get_right_corner_warning_massage() == RegisterPageConstants.WARNING_MAIL_ALREADY_EXIST
@@ -102,7 +102,7 @@ class TestRegisterPage(BaseTest):
         register_page.click_membership_contrat()
         register_page.click_email_confirmation()
         register_page.click_phone_confirmation()
-        register_page.click_phone_number_button("5308522975")
+        register_page.click_phone_number_button("5452375039")
         time.sleep(5)  # reCaptcha doğrulamasını manuel olarak atlamak için
         register_page.click_continue_button()
         assert register_page.get_right_corner_warning_massage() == RegisterPageConstants.WARNING_PASSWORD_CHARACTER_QUANTITY
@@ -123,7 +123,7 @@ class TestRegisterPage(BaseTest):
         register_page.click_membership_contrat()
         register_page.click_email_confirmation()
         register_page.click_phone_confirmation()
-        register_page.click_phone_number_button("5308522975")
+        register_page.click_phone_number_button("5452375039")
         time.sleep(5)  # reCaptcha doğrulamasını manuel olarak atlamak için
         register_page.click_continue_button()
         assert register_page.get_right_corner_warning_massage() == RegisterPageConstants.WARNING_PASSWORDS_DO_NOT_MATCH
@@ -144,7 +144,7 @@ class TestRegisterPage(BaseTest):
         register_page.click_membership_contrat()
         register_page.click_email_confirmation()
         register_page.click_phone_confirmation()
-        register_page.click_phone_number_button("5308522975")
+        register_page.click_phone_number_button("5452375039")
         time.sleep(5)  # reCaptcha doğrulamasını manuel olarak atlamak için
         register_page.click_continue_button()
         assert register_page.get_right_corner_warning_massage() == RegisterPageConstants.WARNING_TWO_ERROR
